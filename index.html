@@ -226,7 +226,7 @@ button:active {
 
 img.house {
   position: fixed;
-  left: 15vw;
+  left: 5vw;
   bottom: 2.5vw;
   width: 25vw;
   height: 20vw;
@@ -244,15 +244,15 @@ img.house {
 
 img.cat {
   position: fixed;
-  left: 45vw;
-  bottom: 0.5vw;
+  left: 0vw;
+  top: 8vw;
   width: 15vw;
   height: 20vw;
   -webkit-animation: popup 2s linear forwards 2s,
     kitty 8s linear infinite 4s;
           animation: popup 2s linear forwards 2s,
     kitty 8s linear infinite 4s;
-  perspective: 600px;
+  perspective: 300px;
   transform-style: preserve-3d;
   transform-origin: bottom center;
   transform: rotateY(-10deg) rotateX(-90deg);
@@ -260,21 +260,21 @@ img.cat {
 
 img.bat {
   position: fixed;
-  left: 65vw;
-  bottom: -1vw;
+  left: 75vw;
+  top: 11vw;
   width: 10vw;
 }
 .hanger {
   position: fixed;
   left: 12.5vw;
-  top: -13vw;
-  height: 25vw;
+  top: 0vw;
+  height: 5vw;
   border-left: 2px solid rgb(0,0,0,0.8);
   -webkit-animation: popdown 0s linear forwards,
     swing 15s linear infinite 1s;
           animation: popdown 0s linear forwards,
     swing 5s linear infinite 0s;
-  perspective: 600px;
+  perspective: 300px;
   transform-style: preserve-3d;
   transform-origin: top center;
   transform: translateY(-100%);
@@ -284,7 +284,7 @@ img.bat {
 
 img.witch {
   position: fixed;
-  right: 65vw;
+  right: -15vw;
   top: 18vw;
   width: 13vw;
   transform: rotateY(-180deg);
@@ -1056,7 +1056,7 @@ font: 500 20px/20px 'Mythos', sans-serif;
 padding: 0;
 left: 0px;
 transform: rotate(0deg);
-z-index: 9;
+z-index: -1;
 opacity:0.5; 
 text-align:center;  
 }
