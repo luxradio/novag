@@ -157,26 +157,25 @@ button:active {
   filter: brightness(150%) drop-shadow(-0.2vw 0.2vw 0.1em #2D0B2F);
   -webkit-filter: brightness(150%) drop-shadow(-0.2vw 0.2vw 0.1em #2D0B2F);
 }
-
-.ground {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100vh;
-}
 .ground .fog-1, .ground .fog-2 {
   position: fixed;
   width: 100vw;
   left: 50vw;
   bottom: -20vh;
-  opacity: 0.2;
+  opacity: 0.4;
   z-index: -1;
 }
 .ground .fog-2 {
   width: 100vw;
   left: -25vw;
   top: 25vh;
+}
+.ground {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
 }
 .ground .ground-01 {
   position: fixed;
@@ -202,7 +201,7 @@ button:active {
   height: 60vw;
   left: -10vw;
   bottom: -55vw;
-  background: #F7FBFA;
+  background: rgb(247,247,255.2);
   border-radius: 50% 50% 0 0;
 }
 .ground .ground-2 {
@@ -211,6 +210,8 @@ button:active {
   height: 100vw;
   left: 10vw;
   bottom: -95vw;
+  z-index: 1;
+  opacity:1;
   background: #E7F3F1;
   border-radius: 50% 50% 0 0;
 }
@@ -220,7 +221,9 @@ button:active {
   height: 80vw;
   right: -40vw;
   bottom: -65vw;
-  background: #F7FBFA;
+  z-index: 1;
+  opacity:1;
+  background: rgb(238,238,238.2);
   border-radius: 50% 50% 0 0;
 }
 
@@ -278,25 +281,26 @@ img.bat {
   transform-style: preserve-3d;
   transform-origin: top center;
   transform: translateY(-100%);
-  box-shadow: -0.2vw 0.2vw 0.2em #2D0B2F;
+  box-shadow: -0.2vw 0.2vw 0.2em #00000000;
   text-align:center;
 }
-
 img.witch {
   position: fixed;
-  right: -13vw;
-  top: 23vw;
-  width: 13vw;
-  transform: rotateY(-180deg);
+  left: 69vw;
+  top: 26vw;
+  width: 14vw;
+  height: 17vw;
+  z-index: -2;
+  transform: rotateY(180deg);
   text-align:center;
 }
 .hanger.witch-hanger {
-  left: unset;
-  right: 15vw;
-  -webkit-animation: popdown 31s linear forwards 20s,
-    swing 15s linear infinite 32s;
-          animation: popdown 11s linear forwards 20s,
-    swing 15s linear infinite 32s;
+  -webkit-animation: popdown 17s linear forwards 20s,
+    swing 15s linear infinite 722s;
+          animation: popdown 17s linear forwards 20s,
+    swing 15s linear infinite 720s;
+	z-index: -2;
+	 text-align:center;
 }
 
 .pumpkin {
@@ -549,7 +553,16 @@ img.tree {
   75% {
     transform: rotateY(30deg) translateY(-2%);
   }
-}
+ }
+        .image-container img {
+              position: fixed;
+  width: 12vw;
+  height: 12vw;
+  right: 5vw;
+  bottom: 9vw;
+  z-index: -1;
+  opacity: 3;
+        }
 </style>
 </head>
 <body>
@@ -580,6 +593,14 @@ img.tree {
     <div class="ground-2"></div>
     <div class="ground-3"></div>
   </div>
+  </style>
+      </div>
+
+    <div class="image-container">
+        <!-- Image -->
+        <img src="https://xatimg.com/image/kCHd4wm63ejI.png" alt="Foto">
+    </div> 
+  </style>
 </div>
 <head>
 <style>   
@@ -1160,7 +1181,7 @@ font-size: 16px;
 font-family: 'Redressed', cursive; 
 font-family: 'Nova nope', cursive; 
 font-family: 'MS Serif', cursive; 
-z-index: -1;   
+z-index: -3;   
 top: 0px;  
 left: 50px;">
 <marquee behavior="alternate" height="622" direction="up" scrollamount="2" scrolldelay="10" width="1700" style="">
